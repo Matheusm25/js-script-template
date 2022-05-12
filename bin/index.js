@@ -47,3 +47,4 @@ fs.writeFileSync(path.join('./', process.argv[2], 'src', 'index.js'), mainFile);
 
 console.log('project created');
 console.log('run cd', process.argv[2], ' and then npm install or yarn');
+process.exit(0);
