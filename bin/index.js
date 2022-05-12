@@ -4,7 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 if (!process.argv[2]) {
-  throw new Error('Must receive a name');
+  console.log('Must receive a name');
+  process.exit(1);
 }
 
 fs.mkdirSync(path.join('./', process.argv[2]));
